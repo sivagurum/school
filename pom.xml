@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.eliteschool</groupId>
+  <artifactId>school</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>school-core</module>
+  	<module>school-web</module>
+  </modules>
+  <properties>		
+		<spring-data-mongodb-version>1.2.1.RELEASE</spring-data-mongodb-version>
+		<org.mongodb-version>2.12.2</org.mongodb-version>
+  </properties>
+  <dependencies>
+  	<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>${spring-data-mongodb-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>${org.mongodb-version}</version>
+		</dependency>
+  </dependencies>
+</project>

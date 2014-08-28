@@ -1,0 +1,30 @@
+Spring MVC :
+------------------------
+http://www.mkyong.com/tutorials/spring-mvc-tutorials/
+
+Spring Security :
+------------------
+http://www.mkyong.com/tutorials/spring-security-tutorials/
+
+Spring Tiles:
+--------------
+http://richardbarabe.wordpress.com/2014/02/02/apache-tiles-3-integration-with-spring-mvc/
+
+Maven Multi Module Project
+----------------------------
+http://skillshared.blogspot.in/2012/11/how-to-create-multi-module-project-with.html
+
+Spring Common Validations
+---------------------------
+http://forum.spring.io/forum/spring-projects/web/109901-spring-3-integration-with-commons-validation-framework
+
+Spring Core Mongo :
+-------------------
+http://source.lishman.com/project/609#file/19060
+http://examples.lishman.com/spring/data-mongodb/object-mapping.html
+
+Spring MVC with Mongo DB
+-------------------------
+http://blog.manishchhabra.com/2013/04/spring-data-mongodb-example-with-spring-mvc-3-2/
+http://mehtagautam.blogspot.in/2012/09/step-by-step-spring-mongodb-integration.html
+
