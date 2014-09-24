@@ -40,7 +40,7 @@ public class SchoolEnrollService{
 
 	public void saveSchool(SchoolEnroll schoolEnroll) {
 		
-		logger.info(" *** SchoolEnrollService saveSchool  *** ");
+		logger.info(" *** SchoolEnrollService saveSchool  *** "+mongoTemplate.getDb());
 		
 		mongoTemplate.save(schoolEnroll, Commons.SCHOOL_ENROLL_COLLECTION_NAME);		
 	}

@@ -17,6 +17,14 @@ Menu
 		<li>
 			<spring:url value="/studentEnroll" var="studentEnrollUrl" htmlEscape="true"/>
 			<a href="${studentEnrollUrl}">Student Enroll</a>
-		</li>		
+		</li>
+		<li>
+			<spring:url value="/FileUploadForm" var="fileUploadFormUrl" htmlEscape="true"/>
+			<a href="${fileUploadFormUrl}">File Upload</a>
+		</li>
+		<li>
+			<spring:url value="/fileDownload/upload/nature/jpg" var="fileDownloadFormUrl" htmlEscape="true"/>
+			<a href="${fileDownloadFormUrl}">File Download</a>
+		</li>				
 	</ul>
 </div>

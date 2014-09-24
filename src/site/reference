@@ -28,3 +28,6 @@ Spring MVC with Mongo DB
 http://blog.manishchhabra.com/2013/04/spring-data-mongodb-example-with-spring-mvc-3-2/
 http://mehtagautam.blogspot.in/2012/09/step-by-step-spring-mongodb-integration.html
 
+Spring MVC with Mongo DB GridFs
+--------------------------------
+https://code.google.com/p/fresh-mongo/source/browse/trunk/SpringMongo/src/main/java/com/lichhao/system/web/controller/UploadFormController.java?r=7

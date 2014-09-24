@@ -22,7 +22,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.eliteschool.controller" />
+	<context:component-scan base-package="com.eliteschool.controller"/>	
 	<context:component-scan base-package="com.eliteschool.school.service" />
 	<context:component-scan base-package="com.eliteschool.school.validator" />
 	
@@ -55,7 +55,39 @@
 	</beans:bean>
 	
 	<!-- Import bean definitions for MongoDb configuration -->	
-	<beans:import resource="spring-data-mongo.xml"/>	
+	<beans:import resource="spring-data-mongo.xml"/>
 	
+	
+	
+	
+	
+	<!-- <beans:bean
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<beans:property name="order" value="1" />
+	</beans:bean>
+	
+	
+	
+	<beans:bean class="org.springframework.web.servlet.view.BeanNameViewResolver"
+		 /> -->
+	<!-- For multipart file like image file uploading -->	 
+	<beans:bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="defaultEncoding" value="UTF-8" />
+		<beans:property name="maxUploadSize" value="1073741824" /><!-- 1GB -->		
+		<beans:property name="maxInMemorySize" value="4096" />
+		<beans:property name="uploadTempDir" value="upload/temp" />
+	</beans:bean>
+	
+	<beans:bean id="exceptionResolver"
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<beans:property name="exceptionMappings">
+			<beans:props>
+				<beans:prop key="java.lang.Exception">
+					error_all
+                </beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
 	
 </beans:beans>
